@@ -23,7 +23,7 @@ describe("Selecionar Produto", () => {
   });
 
   massa.array.forEach((item)=>{
-    it(`Selecionar ${item.productName}`, () => {
+    it(`Selecionar ${item.productName} DDT`, () => {
     cy.title().should("eq", "Swag Labs");
 
     cy.get("#user-name").type(item.username);
